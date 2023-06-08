@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+
+public class CalculadorDeVacaciones {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner (System.in);
+
+        System.out.println("Quieres consultar? 1-si 2-no");
+        int i = scanner.nextInt();
+
+        while(i == 1){
+            System.out.println("Ingresa el deparatamento al que perteneces: ");
+        int depto = scanner.nextInt();
+
+        if(depto == 1){
+            System.out.println("Ingresa los años de antiguedad: ");
+            int anios = scanner.nextInt();
+
+            if (anios == 1){
+                System.out.println("Tienes derecho a 6 dias de vacaciones");
+            } else {
+                if (anios >= 2 && anios <= 6){
+                    System.out.println("Tienes derecho a 14 dias de vacaciones");
+                } else {
+                    if (anios >= 7){
+                        System.out.println("Tienes derecho a 20 dias de vacaciones.");
+                    }
+                    }
+                }
+            } else{
+                if (depto == 2){
+                    System.out.println("Ingresa los años de antiguedad: ");
+                    int anios = scanner.nextInt();
+
+                    if (anios == 1){
+                        System.out.println("Tienes derecho a 7 dias de vacaciones" );
+
+                    } else {
+                        if (anios >= 2 && anios <= 6){
+                            System.out.println("Tienes derecho a 14 dias de vacaciones");
+                        } else{
+                            if (anios >=7){
+                                System.out.println("Tienes derecho a 20 dias de vacaciones");
+                            }
+                            }
+                        }
+                }else{
+                    if(depto == 3){
+                        System.out.println("Ingresa los años de antiguedad");
+                        int anios = scanner.nextInt();
+
+                        if (anios == 1){
+                            System.out.println("Tienes derecho a 10 dias de vacaciones");
+                        } else{
+                            if (anios >= 2 && anios <= 6){
+                                System.out.println("Tienes derecho a 20 de vacaciones");
+                            } else{
+                                if (anios >= 7){
+                                    System.out.println("Tienes derecho a 30 dias de vacaciones");
+                                }
+                            }
+                        }
+                    } 
+                }
+                }
+                System.out.println("Quieres hacer una consulta? 1-si 2-no");
+                i = scanner.nextInt();
+        }
+
+        
+
+        
+    }
+}
